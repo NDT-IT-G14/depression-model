@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Dep Predictor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Depression Level Predictor</h1>
+        </div>
+
+        <form action="/" method="POST">
+            <div class="likertm-question">
+                <p>01. I couldn't seem to experience any positive feeling at all </p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-01" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-01" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-01" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-01" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>02. I just couldn't seem to get going</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-02" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-02" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-02" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-02" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>03. I felt that I had nothing to look forward to</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-03" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-03" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-03" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-03" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+        
+            <div class="likertm-question">
+                <p>04. I felt sad and depressed</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-04" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-04" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-04" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-04" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>05. I felt that I had lost interest in just about everything</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-05" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-05" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-05" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-05" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>06. I felt I wasn't worth much as a person</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-06" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-06" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-06" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-06" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>07. I felt that life wasn't worthwhile</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-07" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-07" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-07" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-07" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>08. I couldn't seem to get any enjoyment out of the things I did</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-08" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-08" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-08" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-08" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>09. I felt down-hearted and blue</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-09" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-09" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-09" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-09" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>10. I was unable to become enthusiastic about anything</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-10" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-10" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-10" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-10" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>11. I felt I was pretty worthless </p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-11" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-11" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-11" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-11" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>12. I could see nothing in the future to be hopeful about</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-12" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-12" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-12" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-12" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>13. I felt that life was meaningless</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-13" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-13" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-13" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-13" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>14. I found it difficult to work up the initiative to do things</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-14" value="0">
+                <label for="never" class='likertm-label'>Never</label><br>
+                <input class='likertm-frontend' type="radio" name="question-14" value="1">
+                <label for="sometimes" class='likertm-label'>Sometimes</label><br>
+                <input class='likertm-frontend' type="radio" name="question-14" value="2">
+                <label for="often" class='likertm-label'>Often</label><br>
+                <input class='likertm-frontend' type="radio" name="question-14" value="3">
+                <label for="always" class='likertm-label'>Almost Always</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>15. Education</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-15" value="0">
+                <label for="noschool" class='likertm-label'>No school</label><br>
+                <input class='likertm-frontend' type="radio" name="question-15" value="1">
+                <label for="primaryschool" class='likertm-label'>Less than high school</label><br>
+                <input class='likertm-frontend' type="radio" name="question-15" value="2">
+                <label for="highschool" class='likertm-label'>High school</label><br>
+                <input class='likertm-frontend' type="radio" name="question-15" value="3">
+                <label for="university" class='likertm-label'>University degree</label><br>
+                <input class='likertm-frontend' type="radio" name="question-15" value="4">
+                <label for="graduate" class='likertm-label'>Graduate degree</label><br>
+                </div>
+
+            <div class="likertm-question">
+                <p>16. Gender</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-16" value="1">
+                <label for="male" class='likertm-label'>Male</label><br>
+                <input class='likertm-frontend' type="radio" name="question-16" value="2">
+                <label for="female" class='likertm-label'>Female</label><br>
+                <input class='likertm-frontend' type="radio" name="question-16" value="3">
+                <label for="other" class='likertm-label'>Other</label><br>
+                </div>
+
+                <div class="likertm-question">
+                <p>17. Martial Status</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-17" value="1">
+                <label for="nevermarried" class='likertm-label'>Never married</label><br>
+                <input class='likertm-frontend' type="radio" name="question-17" value="2">
+                <label for="currently" class='likertm-label'>Currently married</label><br>
+                <input class='likertm-frontend' type="radio" name="question-17" value="3">
+                <label for="previously" class='likertm-label'>Previously married</label><br>
+                </div>
+
+                <div class="likertm-question">
+                <p>18. Age</p>
+            </div>
+                <div class="likertm-choices">
+                <input class='likertm-frontend' type="radio" name="question-18" value="0">
+                <label for="primarychildren" class='likertm-label'>Primary Children</label><br>
+                <input class='likertm-frontend' type="radio" name="question-18" value="1">
+                <label for="secondarychildren" class='likertm-label'>Secondary Children</label><br>
+                <input class='likertm-frontend' type="radio" name="question-18" value="2">
+                <label for="adults" class='likertm-label'>Adults</label><br>
+                <input class='likertm-frontend' type="radio" name="question-18" value="3">
+                <label for="elderadults" class='likertm-label'>Elder Adults</label><br>
+                <input class='likertm-frontend' type="radio" name="question-18" value="4">
+                <label for="olderpeople" class='likertm-label'>Older People</label><br><br>
+                </div>
+
+            <div class="inputfield">
+                <input type="submit" class="btn" value="Predict Condition"><br><br>
+            </div>
+        </form>
+        <div class="result">
+            {% if pred != 'None'%}
+            <p>
+                Your Depression Condition : {{ pred }}
+            </p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
